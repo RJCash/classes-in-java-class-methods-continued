@@ -13,7 +13,11 @@ public class Example {
      * method receives true for its argument, it will return false.
      */
     // todo: write not() method
+    public boolean not(boolean b){
+        
+        return !b;
 
+    }
     /**
      * Create a method as described:
      * - named "doublePlusOne"
@@ -25,7 +29,10 @@ public class Example {
      * returns 11.
      */
     // todo: write doublePlusOne() method
-
+    public int doublePlusOne(int a){
+        a = (a*2)+1;
+        return a;
+    }
     /**
      * Create a method as described:
      * - named "averageTwoNumbers"
@@ -36,7 +43,10 @@ public class Example {
      * averaged to 9.
      */
     // todo: write averageTwoNumbers() method
-
+    public double averageTwoNumbers(double num1, double num2){
+        double average = ((num1 + num2)/2);
+        return average;
+    }
     /**
      * Create a method as described:
      * - named "getGreeting"
@@ -49,7 +59,10 @@ public class Example {
      * "Hello, Tracy!".
      */
     // todo: write getGreeting() method
-
+    public String getGreeting(String s){
+        String greeting = "Hello, "+s+"!";
+        return greeting;
+    }
     /**
      * Create a method as described:
      * - named "sayHello"
@@ -62,4 +75,7 @@ public class Example {
      * "Tracy", this method should print out "Hello, Tracy!".
      */
     // todo: write sayHello() method
+    public void sayHello(String s){
+        System.out.println(getGreeting(s));
+    }
 }
